@@ -1,16 +1,10 @@
 # Strava Graphs
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/YOUR_BADGE_ID/deploy-status)](https://app.netlify.com/sites/strava-graphs/deploys)
-
 Strava Graphs is a web application that connects to the Strava API to fetch user activity data and visualize contributions using an interactive graph built with D3.js.
 
 ## 🚀 Live Demo
 
 Check out the live version of the project: [Strava Graphs](https://strava-graphs.netlify.app/)
-
-## 📂 Repository
-
-Find the source code and contribute: [GitHub Repository](https://github.com/fcuisin/strava-graphs)
 
 ## 📡 Strava API Integration
 
