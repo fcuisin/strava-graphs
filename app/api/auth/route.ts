@@ -22,5 +22,5 @@ export async function GET(req: NextRequest) {
     path: "/",
   });
 
-  return NextResponse.redirect(new URL("/activities", req.url));
+  return NextResponse.redirect(new URL("/activities"));
 }
