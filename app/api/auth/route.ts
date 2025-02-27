@@ -1,6 +1,6 @@
 import { NextRequest, NextResponse } from "next/server";
 import { cookies } from "next/headers";
-import { authService, stravaAuthProvider } from "@/app/services/auth";
+import { authService, stravaAuthProvider } from "@/services/auth";
 
 export async function GET(req: NextRequest) {
   const searchParams = req.nextUrl.searchParams;
@@ -22,5 +22,5 @@ export async function GET(req: NextRequest) {
     path: "/",
   });
 
-  return NextResponse.redirect(new URL("/", req.url));
+  return NextResponse.redirect(new URL("/activities", req.url));
 }

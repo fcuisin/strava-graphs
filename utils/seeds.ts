@@ -7,13 +7,17 @@ const getRamdomDate = (startDate: Date, endDate: Date): Date => {
   return new Date(randomTime);
 };
 
-export const generateRandomData = (startDate: Date, endDate: Date) => {
-  const data: HeatmapData = [];
-  for (let x = 0; x <= 365; x++) {
+export const generateRandomData = (
+  startDate: Date,
+  endDate: Date,
+  nbEvents: number
+): HeatmapData => {
+  const data = [];
+  for (let x = 1; x <= nbEvents; x++) {
     const date = getRamdomDate(startDate, endDate);
     data.push({
       date,
-      value: Math.random() * 40,
+      value: Math.round(Math.random() * 50000),
     });
   }
   return data;
