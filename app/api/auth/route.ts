@@ -22,5 +22,7 @@ export async function GET(req: NextRequest) {
     path: "/",
   });
 
-  return NextResponse.redirect(new URL("/activities"));
+  const redirectUrl = new URL("/activities", req.url);
+  redirectUrl.searchParams.set("success", "true");
+  return NextResponse.redirect(redirectUrl);
 }
